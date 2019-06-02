@@ -1,0 +1,328 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PICA-Admin</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+    <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/PIKA-Admin.png" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="index.html"><img width="20px" src="images/P-small.png" alt="Logo"></a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                    </li>
+
+                    <h3 class="menu-title">patient state-doctor</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>환자상태 정보입력</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="add-ptstate-dt-ex">문진</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="add-ptstate-dt-jin">일반 진료</a></li>
+                        </ul>
+                    </li>
+
+                    <h3 class="menu-title">patient state-nurse</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="add-ptstate-ns" class="dropdown-toggle" data-toggle="" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>환자상태 정보입력</a>
+                    </li>
+
+                    <h3 class="menu-title">Human</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Doctor</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="dt-list.html">Doctor List</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="add-dt.html">Add Doctor</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Nurse</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="ns-list.html">Nurse List</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="add-ns.html">Add Nurse</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Patient</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="pt-list.html">Patient List</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="add-pt.html">Add Patient</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="float-right">
+                      <form action="/logout.html" class="" method="post">
+                          <input type="hidden" value="logout">
+                          <button class="btn-success btn" type="submit">logout</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+
+        </header><!-- /header -->
+        <!-- Header-->
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Patient</a></li>
+                            <li class="active">Patient results</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+            <div class="animated fadeIn">
+                <div class="row">
+
+                  <div class="col-lg-12 col-12">
+                      <div class="card">
+                          <div class="card-header">
+                              <strong class="card-title">Patient results</strong>
+                          </div>
+                          <div class="card-body">
+                            <div class="card-body-title">
+                              <strong>문진</strong>
+                            </div>
+                            <table id="exam" class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">PID</th>
+                                        <th scope="col">DID</th>
+                                        <th scope="col">Edate</th>
+                                        <th scope="col">imp</th>
+                                        <th scope="col">weight</th>
+                                        <th scope="col">height</th>
+                                        <th scope="col">Drug</th>
+                                        <th scope="col">family</th>
+                                        <th scope="col">PH</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(var i=0; i<e_len; i++){ %>
+                                    <tr>
+                                          <th scope="row">
+                                            <%= pid %>
+                                          </th>
+                                          <td>
+                                            <%= exam_res[i].DID %>
+                                          </td>
+                                          <td style="width:80px;">
+                                            <%= exam_res[i].Edate %>
+                                          </td>
+                                          <td>
+                                            <%= exam_res[i].imp %>
+                                          </td>
+                                          <td>
+                                            <%= exam_res[i].weight %>
+                                          </td>
+                                          <td>
+                                            <%= exam_res[i].height %>
+                                          </td>
+                                          <td>
+                                            <%= exam_res[i].Disability %>
+                                          </td>
+                                          <td>
+                                            <%= exam_res[i].Drug %>
+                                          </td>
+                                          <td>
+                                            <%= exam_res[i].family %>
+                                          </td>
+                                          <td>
+                                            <%= exam_res[i].PH %>
+                                          </td>
+                                    </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <div class="card-body-title">
+                              <strong>일반 진료</strong>
+                            </div>
+                            <table id="jin" class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">PID</th>
+                                        <th scope="col">DID</th>
+                                        <th scope="col">Ddate</th>
+                                        <th scope="col">opinion</th>
+                                        <th scope="col">prescription</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(var i=0; i<j_len; i++){ %>
+                                    <tr>
+                                          <th scope="row">
+                                            <%= pid %>
+                                          </th>
+                                          <td>
+                                            <%= jin_res[i].DID %>
+                                          </td>
+                                          <td style="width:80px;">
+                                            <%= jin_res[i].Ddate %>
+                                          </td>
+                                          <td>
+                                            <%= jin_res[i].opinion %>
+                                          </td>
+                                          <td>
+                                            <%= jin_res[i].prescription %>
+                                          </td>
+                                    </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <div class="card-body-title">
+                              <strong>바이탈 체크</strong>
+                            </div>
+                            <table id="vital" class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">PID</th>
+                                        <th scope="col">DID</th>
+                                        <th scope="col">Ndate</th>
+                                        <th scope="col">BP</th>
+                                        <th scope="col">RR</th>
+                                        <th scope="col">BT</th>
+                                        <th scope="col">PR</th>
+                                        <th scope="col">BS</th>
+                                        <th scope="col">IT</th>
+                                        <th scope="col">OP</th>
+                                        <th scope="col">SpO2</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(var i=0; i<v_len; i++){ %>
+                                    <tr>
+                                          <th scope="row">
+                                            <%= pid %>
+                                          </th>
+                                          <td>
+                                            <%= vital_res[i].DID %>
+                                          </td>
+                                          <td style="width:80px;">
+                                            <%= vital_res[i].Ndate %>
+                                          </td>
+                                          <td>
+                                            <%= vital_res[i].BP %>
+                                          </td>
+                                          <td>
+                                            <%= vital_res[i].RR %>
+                                          </td>
+                                          <td>
+                                            <%= vital_res[i].BT %>
+                                          </td>
+                                          <td>
+                                            <%= vital_res[i].PR %>
+                                          </td>
+                                          <td>
+                                            <%= vital_res[i].BS %>
+                                          </td>
+                                          <td>
+                                            <%= vital_res[i].IT %>
+                                          </td>
+                                          <td>
+                                            <%= vital_res[i].OP %>
+                                          </td>
+                                          <td>
+                                            <%= vital_res[i].SpO2 %>
+                                          </td>
+                                    </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                          </div>
+                      </div>
+                  </div>
+
+
+                </div>
+            </div><!-- .animated -->
+        </div><!-- .content -->
+
+
+    </div><!-- /#right-panel -->
+
+    <!-- Right Panel -->
+
+
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
